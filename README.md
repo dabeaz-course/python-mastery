@@ -3,7 +3,7 @@
 A course by David Beazley (https://www.dabeaz.com)  
 Copyright (C) 2007-2023  
 
-## Synopysis
+## Synopsis
 
 An exercise-driven course on Advanced Python Programming that was
 battle-tested several hundred times on the corporate-training circuit
