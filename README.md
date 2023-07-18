@@ -101,6 +101,14 @@ in-person format. It simply isn't possible to cover absolutely
 everything.  As such, the course is focused primarily on the core
 Python language, not third party libraries or tooling.
 
+**Q: Why aren't modern features like typing covered?**
+
+**A:** Mainly, it's an issue of calendar timing and scope.  Course
+material was primarily developed pre-pandemic and represents Python as
+it was at that time. Some topics (e.g., typing or async) are
+sufficiently complex that they would be bettered covered on their own
+in a separate course.
+
 ----
 `>>>` Advanced Python Mastery  
 `...` A course by [dabeaz](https://www.dabeaz.com)  
