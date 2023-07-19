@@ -12,15 +12,20 @@ repos:
       - id: check-toml
       - id: debug-statements
 
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
-    # Ruff version.
-    rev: 'v0.0.259'
-    hooks:
-      - id: ruff
-        args: [--fix, --exit-non-zero-on-fix]
-
-  - repo: https://github.com/psf/black
-    rev: 23.1.0
+  - repo: local
     hooks:
       - id: black
-        args: [.]
+        name: black
+        entry: poetry run black .
+        language: system
+        types: [python]
+      - id: isort
+        name: isort
+        entry: poetry run isort .
+        language: system
+        types: [python]
+      - id: lint
+        name: lint
+        entry: poetry run ruff . --fix
+        language: system
+        types: [python]
