@@ -10,7 +10,7 @@ battle-tested several hundred times on the corporate-training circuit
 for more than a decade.  Written by David Beazley, author of the
 Python Cookbook, 3rd Edition (O'Reilly) and Python Distilled
 (Addison-Wesley).  Released under a Creative Commons license.  Free of
-ads, tracking, pop-ups, newletters, and AI.
+ads, tracking, pop-ups, newsletters, and AI.
 
 ## Target Audience 
 
