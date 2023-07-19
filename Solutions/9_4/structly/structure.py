@@ -2,8 +2,9 @@
 
 __all__ = ["Structure"]
 
-from .validate import Validator, validated
 from collections import ChainMap
+
+from .validate import Validator, validated
 
 
 class StructureMeta(type):

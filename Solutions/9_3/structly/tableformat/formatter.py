@@ -22,9 +22,9 @@ class TableFormatter(ABC):
         pass
 
 
-from .formats.text import TextTableFormatter
 from .formats.csv import CSVTableFormatter
 from .formats.html import HTMLTableFormatter
+from .formats.text import TextTableFormatter
 
 
 class ColumnFormatMixin:

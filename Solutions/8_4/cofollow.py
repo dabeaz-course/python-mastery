@@ -1,7 +1,6 @@
 # cofollow.py
 import os
 import time
-import csv
 
 
 def follow(filename, target):

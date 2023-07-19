@@ -1,8 +1,8 @@
 # server.py
 
-from socket import *
-from select import select
 from collections import deque
+from select import select
+from socket import *
 from types import coroutine
 
 tasks = deque()

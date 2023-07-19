@@ -1,8 +1,8 @@
 # server.py
 
-from socket import *
-from select import select
 from collections import deque
+from select import select
+from socket import *
 
 tasks = deque()
 recv_wait = {}  #  sock -> task

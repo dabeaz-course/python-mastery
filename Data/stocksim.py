@@ -11,12 +11,11 @@
 
 import math
 import time
-import threading
 
 try:
     import queue
 except ImportError:
-    import Queue as queue
+    pass
 
 history_file = "dowstocks.csv"
 

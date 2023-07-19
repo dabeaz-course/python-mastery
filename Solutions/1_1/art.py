@@ -1,7 +1,7 @@
 # art.py
 
-import sys
 import random
+import sys
 
 chars = "\|/"
 

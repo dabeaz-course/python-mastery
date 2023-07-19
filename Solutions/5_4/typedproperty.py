@@ -17,9 +17,17 @@ def typedproperty(name, expected_type):
     return value
 
 
-String = lambda name: typedproperty(name, str)
-Integer = lambda name: typedproperty(name, int)
-Float = lambda name: typedproperty(name, float)
+def String(name):
+    return typedproperty(name, str)
+
+
+def Integer(name):
+    return typedproperty(name, int)
+
+
+def Float(name):
+    return typedproperty(name, float)
+
 
 # Example
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # coticker.py
 from structure import Structure
-from validate import String, Integer, Float
+from validate import Float, Integer, String
 
 
 class Ticker(Structure):
@@ -15,9 +15,10 @@ class Ticker(Structure):
     volume = Integer()
 
 
+import csv
+
 from cofollow import consumer, follow, receive
 from tableformat import create_formatter
-import csv
 
 
 @consumer

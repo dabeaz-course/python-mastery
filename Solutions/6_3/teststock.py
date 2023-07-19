@@ -1,7 +1,8 @@
 # teststock.py
 
-import stock
 import unittest
+
+import stock
 
 
 class TestStock(unittest.TestCase):

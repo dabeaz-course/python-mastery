@@ -1,7 +1,8 @@
 # structure.py
 
-from .validate import Validator, validated
 from collections import ChainMap
+
+from .validate import Validator, validated
 
 
 class StructureMeta(type):

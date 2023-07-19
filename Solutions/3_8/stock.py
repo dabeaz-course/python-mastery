@@ -59,14 +59,13 @@ class Stock:
 
 # Sample
 if __name__ == "__main__":
-    import tableformat
     import reader
     from tableformat import (
-        print_table,
-        create_formatter,
-        TextTableFormatter,
         ColumnFormatMixin,
+        TextTableFormatter,
         UpperHeadersMixin,
+        create_formatter,
+        print_table,
     )
 
     portfolio = reader.read_csv_as_instances("../../Data/portfolio.csv", Stock)

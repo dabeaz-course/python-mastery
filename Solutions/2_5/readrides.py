@@ -10,7 +10,7 @@ def read_rides_as_tuples(filename):
     records = []
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)  # Skip headers
+        next(rows)  # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]
@@ -28,7 +28,7 @@ def read_rides_as_dicts(filename):
     records = []
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)  # Skip headers
+        next(rows)  # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]
@@ -56,7 +56,7 @@ def read_rides_as_instances(filename):
     records = []
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)  # Skip headers
+        next(rows)  # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]
@@ -78,7 +78,7 @@ def read_rides_as_columns(filename):
     numrides = []
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)  # Skip headers
+        next(rows)  # Skip headers
         for row in rows:
             routes.append(row[0])
             dates.append(row[1])
@@ -127,7 +127,7 @@ def read_rides_as_dicts(filename):
     records = RideData()
     with open(filename) as f:
         rows = csv.reader(f)
-        headings = next(rows)  # Skip headers
+        next(rows)  # Skip headers
         for row in rows:
             route = row[0]
             date = row[1]

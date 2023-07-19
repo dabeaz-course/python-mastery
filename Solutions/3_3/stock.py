@@ -30,7 +30,7 @@ def read_portfolio(filename):
     portfolio = []
     with open(filename) as f:
         rows = csv.reader(f)
-        headers = next(rows)
+        next(rows)
         for row in rows:
             record = Stock.from_row(row)
             portfolio.append(record)
@@ -38,8 +38,8 @@ def read_portfolio(filename):
 
 
 if __name__ == "__main__":
-    import tableformat
     import reader
+    import tableformat
 
     # portfolio = read_portfolio('../../Data/portfolio.csv')
     portfolio = reader.read_csv_as_instances("../../Data/portfolio.csv", Stock)

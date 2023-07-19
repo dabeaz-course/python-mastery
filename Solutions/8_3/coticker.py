@@ -14,9 +14,10 @@ class Ticker(Structure):
     volume = Integer()
 
 
+import csv
+
 from cofollow import consumer, follow
 from tableformat import create_formatter
-import csv
 
 
 @consumer

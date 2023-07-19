@@ -15,7 +15,7 @@ def convert_csv(lines, converter, *, headers=None):
     for rowno, row in enumerate(rows, start=1):
         try:
             records.append(converter(headers, row))
-        except ValueError as e:
+        except ValueError:
             log.warning("Row %s: Bad row: %s", rowno, row)
             log.debug("Row %s: Reason: %s", rowno, row)
     return records

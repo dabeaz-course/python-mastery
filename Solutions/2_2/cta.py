@@ -1,7 +1,8 @@
 # cta.py
 
-from collections import defaultdict, Counter
 import tracemalloc
+from collections import Counter, defaultdict
+
 import readrides
 
 tracemalloc.start()
