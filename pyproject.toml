@@ -7,9 +7,13 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-black = "^23.7.0"
 pandas = "^2.0.3"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+ruff = "^0.0.278"
+pre-commit = "^3.3.3"
 
 [build-system]
 requires = ["poetry-core"]
