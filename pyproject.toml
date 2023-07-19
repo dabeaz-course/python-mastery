@@ -18,6 +18,18 @@ ruff = "^0.0.278"
 pre-commit = "^3.3.3"
 isort = "^5.12.0"
 
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+# Never enforce `E501` (line length violations).
+# Never enforce 'E722' (Bare Except).
+# Never Enforce 'E402' (Module Level Import at top of file).
+# Never Enforce 'F403' (Unable to detect undefined names).
+# Never Enforce 'F821' (Undefined name)
+ignore = ["E501", "E722", "E402", "F403", "F821"]
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
