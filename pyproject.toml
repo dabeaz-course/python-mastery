@@ -4,10 +4,9 @@ version = "0.1.0"
 description = ""
 authors = ["hstephens <stephens.j.hunter@protonmail.com>"]
 readme = "README.md"
-packages = [{include = "python_mastery"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 black = "^23.7.0"
 pandas = "^2.0.3"
 
