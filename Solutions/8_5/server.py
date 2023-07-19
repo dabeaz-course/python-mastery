@@ -5,8 +5,9 @@ from select import select
 from collections import deque
 
 tasks = deque()
-recv_wait = {}   #  sock -> task
-send_wait = {}   #  sock -> task
+recv_wait = {}  #  sock -> task
+send_wait = {}  #  sock -> task
+
 
 def run():
     while any([tasks, recv_wait, send_wait]):
@@ -19,14 +20,15 @@ def run():
         task = tasks.popleft()
         try:
             reason, resource = task.send(None)
-            if reason == 'recv':
+            if reason == "recv":
                 recv_wait[resource] = task
-            elif reason == 'send':
+            elif reason == "send":
                 send_wait[resource] = task
             else:
-                raise RuntimeError('Unknown reason %r' % reason)
+                raise RuntimeError("Unknown reason %r" % reason)
         except StopIteration:
-            print('Task done')
+            print("Task done")
+
 
 def tcp_server(address, handler):
     sock = socket(AF_INET, SOCK_STREAM)
@@ -34,22 +36,23 @@ def tcp_server(address, handler):
     sock.bind(address)
     sock.listen(5)
     while True:
-        yield 'recv', sock
+        yield "recv", sock
         client, addr = sock.accept()
         tasks.append(handler(client, addr))
-        
+
+
 def echo_handler(client, address):
-    print('Connection from', address)
+    print("Connection from", address)
     while True:
-        yield 'recv', client
+        yield "recv", client
         data = client.recv(1000)
         if not data:
             break
-        yield 'send', client
-        client.send(b'GOT:' + data)
-    print('Connection closed')
+        yield "send", client
+        client.send(b"GOT:" + data)
+    print("Connection closed")
 
-if __name__ == '__main__':
-    tasks.append(tcp_server(('',25000), echo_handler))
+
+if __name__ == "__main__":
+    tasks.append(tcp_server(("", 25000), echo_handler))
     run()
-

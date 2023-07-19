@@ -1,5 +1,6 @@
 from logcall import logged
 
+
 class Spam:
     @logged
     def instance_method(self):

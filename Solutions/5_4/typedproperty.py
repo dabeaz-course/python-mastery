@@ -1,7 +1,8 @@
 # typedproperty.py
 
+
 def typedproperty(name, expected_type):
-    private_name = '_' + name
+    private_name = "_" + name
 
     @property
     def value(self):
@@ -10,7 +11,7 @@ def typedproperty(name, expected_type):
     @value.setter
     def value(self, val):
         if not isinstance(val, expected_type):
-            raise TypeError(f'Expected {expected_type}')
+            raise TypeError(f"Expected {expected_type}")
         setattr(self, private_name, val)
 
     return value
@@ -21,13 +22,14 @@ Integer = lambda name: typedproperty(name, int)
 Float = lambda name: typedproperty(name, float)
 
 # Example
-if __name__ == '__main__':
+if __name__ == "__main__":
+
     class Stock:
-        name = String('name')
-        shares = Integer('shares')
-        price = Float('price')
+        name = String("name")
+        shares = Integer("shares")
+        price = Float("price")
+
         def __init__(self, name, shares, price):
             self.name = name
             self.shares = shares
             self.price = price
-

@@ -1,15 +1,18 @@
 # simplemod.py
 
-x = 42        # A global variable
+x = 42  # A global variable
+
 
 # A simple function
-def foo():   
+def foo():
     print("x is %s" % x)
+
 
 # A simple class
 class Spam:
     def yow(self):
-        print('Yow!')
+        print("Yow!")
+
 
 # A scripting statement
 print("Loaded simplemod")

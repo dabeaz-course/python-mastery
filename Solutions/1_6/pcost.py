@@ -1,5 +1,6 @@
 # pcost.py
 
+
 def portfolio_cost(filename):
     total_cost = 0.0
     with open(filename) as f:
@@ -18,5 +19,5 @@ def portfolio_cost(filename):
     return total_cost
 
 
-if __name__ == '__main__':
-    print(portfolio_cost('../../Data/portfolio.dat'))
+if __name__ == "__main__":
+    print(portfolio_cost("../../Data/portfolio.dat"))

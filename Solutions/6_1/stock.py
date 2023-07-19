@@ -2,8 +2,9 @@
 
 from structure import Structure
 
+
 class Stock(Structure):
-    _fields = ('name', 'shares', 'price')
+    _fields = ("name", "shares", "price")
 
     @property
     def cost(self):
@@ -11,4 +12,3 @@ class Stock(Structure):
 
     def sell(self, nshares):
         self.shares -= nshares
-

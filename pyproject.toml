@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.10"
 pandas = "^2.0.3"
 loguru = "^0.7.0"
+plotly = "^5.15.0"
 
 
 [tool.poetry.group.dev.dependencies]
