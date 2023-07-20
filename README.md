@@ -94,7 +94,7 @@ exercises.
 
 **A:** You can use [GitHub discussions](https://github.com/dabeaz-course/python-mastery/discussions) to discuss the course.
 
-**Q: What wasn't topic/tool/library X covered?**
+**Q: Why wasn't topic/tool/library X covered?**
 
 **A:** The course was designed to be completed in an intense 4-day
 in-person format. It simply isn't possible to cover absolutely
