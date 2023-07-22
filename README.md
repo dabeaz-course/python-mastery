@@ -62,64 +62,15 @@ The Advanced Python Mastery course often suggested more in-depth tutorials
 on selected topics.  These were presented at the PyCon conference and
 might be of interest:
 
-* [Generator Tricks for Systems Programmers](https://www.dabeaz.com/generators/)
-* [A Curious Course on Coroutines and Concurrency](http://dabeaz.com/coroutines/index.html)
-* [Python3 Metaprogramming](https://dabeaz.com/py3meta/index.html)
-* [Generators: The Final Frontier](https://dabeaz.com/finalgenerator/index.html)
-* [Modules and Packages: Live and Let Die](https://dabeaz.com/modulepackage/index.html)
+* Hi,This is Sahil Kumar Jamwal.
 
-## Questions and Answers
 
-**Q: Are any videos available?**
 
-**A:** No. You will be able to more quickly read the presentation slides which contain
-technical information.  However, the [Python Programming Language: LiveLessons](https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/) video
-available on O'Reilly's Safari site is closely related to the material in this course.
 
-**Q: Can I use these materials in my own course?**
 
-**A:** Yes. I just kindly ask that you give proper attribution.
 
-**Q: Do you accept bug reports or pull requests?**
 
-**A:** If you've found a bug, please report it!  However, I'm not
-looking to expand or reorganize the course content with new topics or
-exercises.
 
-**Q: Are the presentation slides available in any format other than PDF?**
-
-**A:** No.
-
-**Q: Is there any forum/chat where the course can be discussed?**
-
-**A:** You can use [GitHub discussions](https://github.com/dabeaz-course/python-mastery/discussions) to discuss the course.
-
-**Q: Why wasn't topic/tool/library X covered?**
-
-**A:** The course was designed to be completed in an intense 4-day
-in-person format. It simply isn't possible to cover absolutely
-everything.  As such, the course is focused primarily on the core
-Python language, not third party libraries or tooling.
-
-**Q: Why aren't features like typing, async, or pattern matching covered?**
-
-**A:** Mainly, it's an issue of calendar timing and scope.  Course
-material was primarily developed pre-pandemic and represents Python as
-it was at that time. Some topics (e.g., typing or async) are
-sufficiently complex that they would be bettered covered on their own
-in a separate course.
-
-**Q: How can I help?**
-
-**A:** If you like the course, the best way to support it is to tell
-other people about it.
-
-----
-`>>>` Advanced Python Mastery  
-`...` A course by [dabeaz](https://www.dabeaz.com)  
-`...` Copyright 2007-2023  
-
-![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png). This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
 
 
 
