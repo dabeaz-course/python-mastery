@@ -88,7 +88,7 @@ def read_rides_as_columns(filename):
 # The great "fake"
 
 import collections
-class RideData(collections.Sequence):
+class RideData(collections.abc.Sequence):
     def __init__(self):
         # Each value is a list with all of the values (a column)
         self.routes = []
