@@ -3,7 +3,7 @@
 import collections
 import csv
 
-class DataCollection(collections.Sequence):
+class DataCollection(collections.abc.Sequence):
     def __init__(self, columns):
         self.column_names = list(columns)
         self.column_data = list(columns.values())
@@ -34,4 +34,3 @@ if __name__ == '__main__':
     tracemalloc.start()
     data = read_csv_as_columns('../../Data/ctabus.csv', [intern, intern, intern, int])
     print(tracemalloc.get_traced_memory())
-
