@@ -109,6 +109,12 @@ it was at that time. Some topics (e.g., typing or async) are
 sufficiently complex that they would be bettered covered on their own
 in a separate course.
 
+**Q: Why did you release the course?**
+
+**A:** This course was extensively taught pre-pandemic. Post-pandemic,
+my teaching has shifted towards projects and CS fundamentals.
+However, why let a good course just languish on my computer? 
+
 **Q: How can I help?**
 
 **A:** If you like the course, the best way to support it is to tell
