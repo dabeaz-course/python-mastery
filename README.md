@@ -106,7 +106,7 @@ Python language, not third party libraries or tooling.
 **A:** Mainly, it's an issue of calendar timing and scope.  Course
 material was primarily developed pre-pandemic and represents Python as
 it was at that time. Some topics (e.g., typing or async) are
-sufficiently complex that they would be bettered covered on their own
+sufficiently complex that they would be better covered on their own
 in a separate course.
 
 **Q: Why did you release the course?**
