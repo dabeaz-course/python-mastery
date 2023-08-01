@@ -6,6 +6,7 @@ Here is a version of `readrides.py` with changes for parts (c), (d), and (e).
 # readrides.py
 
 import csv
+import sys
 
 def read_rides_as_tuples(filename):
     '''
