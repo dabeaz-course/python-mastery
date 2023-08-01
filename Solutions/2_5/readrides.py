@@ -117,10 +117,10 @@ class RideData(collections.abc.Sequence):
             sliced = RideData()
             for i in range(ref.start or 0, ref.stop or sys.maxsize, ref.step or 1):
                 sliced.append({
-                    'route': self.routes[index],
-                    'date': self.dates[index],
-                    'daytype': self.daytypes[index],
-                    'rides': self.numrides[index] })
+                    'route': self.routes[i],
+                    'date': self.dates[i],
+                    'daytype': self.daytypes[i],
+                    'rides': self.numrides[i] })
             return sliced
         else:
             return NotImplemented
