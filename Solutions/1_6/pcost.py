@@ -12,7 +12,7 @@ def portfolio_cost(filename):
 
             # This catches errors in int() and float() conversions above
             except ValueError as e:
-                print("Couldn't parse:", line)
+                print("Couldn't parse:", repr(line))
                 print("Reason:", e)
 
     return total_cost
