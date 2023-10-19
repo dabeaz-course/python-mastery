@@ -1,6 +1,6 @@
 # Exercise 2.5 - Solution
 
-Here is a version of `readrides.py` with changes for parts (c) and (d).
+Here is a version of `readrides.py` with changes for parts (c), (d) and (e).
 
 ```python
 # readrides.py
@@ -38,9 +38,9 @@ def read_rides_as_dicts(filename):
             daytype = row[2]
             rides = int(row[3])
             record = {
-                'route': route, 
-                'date': date, 
-                'daytype': daytype, 
+                'route': route,
+                'date': date,
+                'daytype': daytype,
                 'rides' : rides
                 }
             records.append(record)
@@ -100,7 +100,7 @@ class RideData(collections.abc.Sequence):
         self.dates = []
         self.daytypes = []
         self.numrides = []
-        
+
     def __len__(self):
         # All lists assumed to have the same length
         return len(self.routes)
@@ -110,12 +110,23 @@ class RideData(collections.abc.Sequence):
         self.dates.append(d['date'])
         self.daytypes.append(d['daytype'])
         self.numrides.append(d['rides'])
-        
+
     def __getitem__(self, index):
-        return { 'route': self.routes[index],
-                 'date': self.dates[index],
-                 'daytype': self.daytypes[index],
-                 'rides': self.numrides[index] }
+        if isinstance(index, slice):
+            _item = RideData()
+            for i in range(*index.indices(len(self))):
+                _item.append(self[i])
+        elif isinstance(index, int):
+            _item = {
+                "route": self.routes[index],
+                "date": self.dates[index],
+                "daytype": self.daytypes[index],
+                "rides": self.numrides[index],
+            }
+        else:
+            return NotImplemented
+
+        return _item
 
 if __name__ == '__main__':
     import tracemalloc
@@ -125,7 +136,5 @@ if __name__ == '__main__':
 
     print('Memory Use: Current %d, Peak %d' % tracemalloc.get_traced_memory())
 ```
-
-
 
 [Back](ex2_5.md)
