@@ -1,4 +1,4 @@
-# tableformat.py
+# formatter.py
 from abc import ABC, abstractmethod
 
 def print_table(records, fields, formatter):
