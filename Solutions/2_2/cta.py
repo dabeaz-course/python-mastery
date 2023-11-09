@@ -25,7 +25,7 @@ by_route_date = { }
 for row in rows:
     by_route_date[row['route'], row['date']] = row['rides']
 
-print('Rides on Route 22, February 2, 2011:', by_route_date['22','02/02/2011'])
+print('Rides on Route 22, February 2, 2011:', by_route_date['22', '02/02/2011'])
 
 # --------------------------------------------------
 # Question 3: Total number of rides per route
