@@ -21,7 +21,7 @@ def read_rides_as_dicts(filename):
     '''
     Read the bus ride data as a list of dicts
     '''
-    records = []
+    records = RideData()          # <---- CHANGED
     with open(filename) as f:
         rows = csv.reader(f)
         headings = next(rows)     # Skip headers
@@ -40,17 +40,12 @@ def read_rides_as_dicts(filename):
     return records
 
 class Row:
-    # Uncomment to see effect of slots
-    # __slots__ = ('route', 'date', 'daytype', 'rides')
+    __slots__ = ('route', 'date', 'daytype', 'rides')
     def __init__(self, route, date, daytype, rides):
         self.route = route
         self.date = date
         self.daytype = daytype
         self.rides = rides
-
-# Uncomment to use a namedtuple instead
-# from collections import namedtuple
-# Row = namedtuple('Row',('route','date','daytype','rides'))
 
 def read_rides_as_instances(filename):
     '''
@@ -69,10 +64,56 @@ def read_rides_as_instances(filename):
             records.append(record)
     return records
 
+# Read as columns
+def read_rides_as_columns(filename):
+    '''
+    Read the bus ride data into 4 lists, representing columns
+    '''
+    routes = []
+    dates = []
+    daytypes = []
+    numrides = []
+    with open(filename) as f:
+        rows = csv.reader(f)
+        headings = next(rows)     # Skip headers
+        for row in rows:
+            routes.append(row[0])
+            dates.append(row[1])
+            daytypes.append(row[2])
+            numrides.append(int(row[3]))
+    return dict(routes=routes, dates=dates, daytypes=daytypes, numrides=numrides)
+
+# The great "fake"
+
+import collections
+class RideData(collections.abc.Sequence):
+    def __init__(self):
+        # Each value is a list with all of the values (a column)
+        self.routes = []
+        self.dates = []
+        self.daytypes = []
+        self.numrides = []
+        
+    def __len__(self):
+        # All lists assumed to have the same length
+        return len(self.routes)
+
+    def append(self, d):
+        self.routes.append(d['route'])
+        self.dates.append(d['date'])
+        self.daytypes.append(d['daytype'])
+        self.numrides.append(d['rides'])
+        
+    def __getitem__(self, index):
+        return { 'route': self.routes[index],
+                 'date': self.dates[index],
+                 'daytype': self.daytypes[index],
+                 'rides': self.numrides[index] }
+
 if __name__ == '__main__':
     import tracemalloc
     tracemalloc.start()
-    read_rides = read_rides_as_tuples  # Change to as_dicts, as_instances, etc.
-    rides = read_rides("../../Data/ctabus.csv")
+    read_rides = read_rides_as_dicts # Change to as_dicts, as_instances, etc.
+    rides = read_rides("Data/ctabus.csv")
 
     print('Memory Use: Current %d, Peak %d' % tracemalloc.get_traced_memory())
