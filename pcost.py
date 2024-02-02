@@ -12,4 +12,4 @@ def portfolio_cost(filename):
 
 
 if __name__ == "__main__":
-    print(portfolio_cost("Data/portfolio3.dat"))
+    print(portfolio_cost("Data/portfolio.dat"))
