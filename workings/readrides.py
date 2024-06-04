@@ -52,7 +52,7 @@ class Row:
 
 def read_rides_as_class(filename):
     '''
-    Read the bus ride data as a list of dictionaries
+    Read the bus ride data as a list of class
     '''
     records = []
     with open(filename) as f:
@@ -75,7 +75,7 @@ class Stock(typing.NamedTuple):
 
 def read_rides_as_named_tuple(filename):
     '''
-    Read the bus ride data as a list of dictionaries
+    Read the bus ride data as a list of named tuples
     '''
     records = []
     with open(filename) as f:
@@ -100,7 +100,7 @@ class NewRow:
 
 def read_rides_as_class_slots(filename):
     '''
-    Read the bus ride data as a list of dictionaries
+    Read the bus ride data as a list of class slots
     '''
     records = []
     with open(filename) as f:
