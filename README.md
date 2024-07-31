@@ -8,7 +8,8 @@ Copyright (C) 2007-2023
 An exercise-driven course on Advanced Python Programming that was
 battle-tested several hundred times on the corporate-training circuit
 for more than a decade.  Written by David Beazley, author of the
-Python Cookbook, 3rd Edition (O'Reilly) and Python Distilled
+[Python Cookbook, 3rd Edition](https://www.dabeaz.com/cookbook.html) (O'Reilly) and 
+[Python Distilled](https://www.dabeaz.com/python-distilled/index.html)
 (Addison-Wesley).  Released under a Creative Commons license.  Free of
 ads, tracking, pop-ups, newsletters, and AI.
 
