@@ -13,6 +13,12 @@ for more than a decade.  Written by David Beazley, author of the
 (Addison-Wesley).  Released under a Creative Commons license.  Free of
 ads, tracking, pop-ups, newsletters, and AI.
 
+Everything in this course should work with the latest version of
+Python, but be aware that the course primarily targets the feature set
+of Python 3.6.  As such, certain modern features don't get coverage. 
+Honestly, this shouldn't affect you much unless you're trying to write code
+that's freakishly clever.
+
 ## Target Audience 
 
 This course is for Python programmers who want to move beyond 
