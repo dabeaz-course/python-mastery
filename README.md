@@ -116,6 +116,14 @@ it was at that time. Some topics (e.g., typing or async) are
 sufficiently complex that they would be better covered on their own
 in a separate course.
 
+**Q: Do you have plans to modernize the course?**
+
+**A:** It is my intention that everything in the course apply to the
+latest version of Python.  Unless Python makes backwards-incompatible
+changes to the core language, that should hold.   Although I won't
+rule out future coverage of new features, a lot depends on my available
+time and interest.  So, I make no promises. 
+
 **Q: Why did you release the course?**
 
 **A:** This course was extensively taught pre-pandemic. Post-pandemic,
