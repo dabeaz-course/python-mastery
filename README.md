@@ -22,11 +22,12 @@ that's freakishly clever.
 ## Target Audience 
 
 This course is for Python programmers who want to move beyond 
-short scripts to writing more sophisticated programs.  Topics
-focus on programming techniques that get used in popular libraries and
-frameworks. The primary goal is to better understand the Python language
-itself so that you can understand other people's code and so that you
-can apply your newfound knowledge to your own projects.
+short scripts to writing more sophisticated programs.    To do that,
+it helps to better understand the programming techniques used
+in popular libraries and frameworks. Thus, this course is mainly 
+for programmers who want to build a more complete mental model of the
+Python language itself and how it works.  Ultimately, the goal
+is to be able to apply this knowledge to your own projects.
 
 ## Prerequisites
 
@@ -120,9 +121,10 @@ in a separate course.
 
 **A:** It is my intention that everything in the course apply to the
 latest version of Python.  Unless Python makes backwards-incompatible
-changes to the core language, that should hold.   Although I won't
-rule out future coverage of new features, a lot depends on my available
-time and interest.  So, I make no promises. 
+changes to the core language, that should hold.  Although the course
+doesn't cover every new features, I won't rule out future changes.  A
+lot depends on my available time and interest however.  So, I make no
+promises.
 
 **Q: Why did you release the course?**
 
