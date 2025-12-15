@@ -108,6 +108,13 @@ class RideData(collections.abc.Sequence):
         self.numrides.append(d['rides'])
         
     def __getitem__(self, index):
+        if isinstance(index, slice):
+            s = RideData()
+            s.routes = self.routes[index]
+            s.dates = self.date[index]
+            s.daytypes = self.daytypes[index]
+            s.numrides = self.numrides[index]
+            return s
         return { 'route': self.routes[index],
                  'date': self.dates[index],
                  'daytype': self.daytypes[index],
