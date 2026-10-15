@@ -19,7 +19,7 @@ def convert_csv(lines, converter, *, headers=None):
             records.append(converter(headers, row))
         except ValueError as e:
             log.warning('Row %s: Bad row: %s', rowno, row)
-            log.debug('Row %s: Reason: %s', rowno, row)
+            log.debug('Row %s: Reason: %s', rowno, e)
     return records
 
 def csv_as_dicts(lines, types, *, headers=None):
