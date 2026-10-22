@@ -6,7 +6,7 @@ Copyright (C) 2007-2026
 ## IMPORTANT NOTE (Oct. 22, 2026)
 
 It seems that recent versions of Python have broken some of the
-material in this course.  I'm not motivated to update the material
+material in this course.  I'm not motivated to update it
 so the course is being archived and retired.  Thanks for your
 support over the years.  --Dave
 
