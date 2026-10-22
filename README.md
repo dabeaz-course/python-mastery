@@ -1,7 +1,14 @@
 # Advanced Python Mastery
 
 A course by David Beazley (https://www.dabeaz.com)  
-Copyright (C) 2007-2024  
+Copyright (C) 2007-2026  
+
+## IMPORTANT NOTE (Oct. 22, 2026)
+
+It seems that recent versions of Python have broken some of the
+material in this course.  I'm not motivated to update the material
+so the course is being archived and retired.  Thanks for your
+support over the years.  --Dave
 
 ## Synopsis
 
